@@ -1,7 +1,44 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 .card {
-    padding: 0.5rem;
+    padding: 1rem;
     margin: 1rem;
-    display: flex;
-    max-width: 500px;
-    background-color: #d0d8df;
+    max-width: 600px;
+    background-color: #353230;
+}
+
+.card-header {
+    color: #fff3f3;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 0.2rem;
+}
+
+.card-category {
+    color: #d48482;
+}
+
+.card-cat-name {
+    color: #dfc36a;
+}
+
+.card-description {
+    color: #a7dd91;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+footer {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.card-code-example {
+    margin: 1rem;
+    background-color: #3e4a4b;
+    color: #91cedd;
+    margin: 0.5rem;
+    padding: 1rem;
 }

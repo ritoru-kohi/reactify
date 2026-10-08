@@ -8,8 +8,30 @@ type CardProps = {
 
 export const Card = ({data}: CardProps) => {
     return (
-        <div className={styles.card}>
-            {JSON.stringify(data, null, 2)}
-        </div>
+        <article className={styles.card}>
+            <header className={styles['card-header']}>
+                <div className={styles['card-name']}>
+                    <p>{data.name}</p>
+                </div>
+                <div className={styles['card-category']}>
+                    <p>{data.category}</p>
+                </div>
+                <div className={styles['card-cat-name']}>
+                    <p>#{data.categoryName}</p>
+                </div>
+            </header>
+            <div className={styles['card-description']}>
+                <div>
+                    <p>{data.description}</p>
+                    <p>{data.accessData}</p>
+                </div>
+            </div>
+            <div className={styles['card-code-example']}>
+                <pre>{data.codeExample}</pre>
+            </div>
+            <footer>
+                <div></div>
+            </footer>
+        </article>
     )
 }

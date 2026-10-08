@@ -1,0 +1,15 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.card-header {
+    margin-left: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.statistic-list {
+    display: flex;
+    max-width: 600px;
+    padding: 0.3rem;
+}
